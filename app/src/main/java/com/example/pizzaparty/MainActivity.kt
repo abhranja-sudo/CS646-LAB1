@@ -11,6 +11,9 @@ import kotlin.math.ceil
 
 const val TAG = "MainActivity"
 
+/**
+ * MainActivity responsible for taking user input and displaying output for home screen.
+ */
 class MainActivity : AppCompatActivity() {
 
     private lateinit var numAttendEditText: EditText
@@ -30,6 +33,10 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    /**
+     * Called when user click calculate button to calculate total pizza,
+     * call PizzaCalculator object to get the number of pizza required.
+     */
     fun calculateClick(view: View) {
 
         // Get the text that was typed into the EditText
